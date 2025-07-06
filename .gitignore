@@ -1,2 +1,2 @@
-target
-.exercism/
+/target
+.vscode
