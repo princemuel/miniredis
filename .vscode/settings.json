@@ -1,16 +1,20 @@
 {
   "editor.wordWrap": "bounded",
-  "editor.wordWrapColumn": 96,
+  "editor.wordWrapColumn": 120,
   "editor.formatOnSave": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "files.autoSave": "off",
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
     "source.organizeImports": "explicit",
-    "source.addMissingImports": "explicit",
+    "source.addMissingImports": "explicit"
   },
   // Rust Analyzer settings
+  "rust-analyzer.assist.preferSelf": true,
+  "rust-analyzer.assist.emitMustUse": true,
+  // Cargo
   "rust-analyzer.cargo.features": "all",
+  "rust-analyzer.cargo.targetDir": true,
   "rust-analyzer.check.command": "clippy",
   "rust-analyzer.checkOnSave": true,
   // Auto import and organize imports
@@ -32,8 +36,12 @@
   ],
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    "editor.formatOnSave": true
   },
   "rust-analyzer.testExplorer": true,
-  "rust-analyzer.assist.emitMustUse": true,
   "rust-analyzer.semanticHighlighting.punctuation.enable": true,
+  "markdown.validate.enabled": true,
+  "workbench.editor.customLabels.patterns": {
+    "**/mod.rs": "${dirname}.rs"
+  }
 }
