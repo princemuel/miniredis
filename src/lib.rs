@@ -30,8 +30,8 @@
 // pub mod cmd;
 // pub use cmd::Command;
 
-mod connection;
-pub use connection::Connection;
+// mod connection;
+// pub use connection::Connection;
 
 // pub mod frame;
 // pub use frame::Frame;
@@ -49,6 +49,9 @@ pub use connection::Connection;
 
 // mod shutdown;
 // use shutdown::Shutdown;
+
+mod address;
+pub use address::address;
 
 /// Default port that a redis server listens on.
 ///
